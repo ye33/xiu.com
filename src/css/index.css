@@ -1,0 +1,113 @@
+#sideL {
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: -108px;
+  width: 147px;
+  height: 198px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cover {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+#cover img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#sideR {
+  display: none;
+  width: 190px;
+  height: 485px;
+  position: fixed;
+  right: -115px;
+  top: 0;
+  z-index: 10;
+  background: url(../img/index/right.png) no-repeat center center;
+  background-size: contain;
+  padding: 178px 33px 0 33px;
+}
+#sideR a {
+  display: block;
+  text-indent: -9999em;
+  height: 34px;
+}
+
+#banner {
+  background: #02071B;
+}
+
+#main {
+  background: #02071B;
+  padding-bottom: 30px;
+}
+#main .main > img {
+  width: 1200px;
+}
+#main .main > div {
+  border: 5px solid #FEFEFC;
+  padding: 55px 0 60px 0;
+  margin-bottom: 100px;
+}
+#main .main > div h2 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+#main .main > div p {
+  width: 282px;
+  height: 16px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 42px;
+}
+#main .main > div p span {
+  display: inline-block;
+  width: 145px;
+  text-align: center;
+  font-size: 20px;
+  color: #F8FDF9;
+  font-weight: 100;
+  line-height: 33px;
+  letter-spacing: 1px;
+  background: #02071B;
+}
+#main .main > div .one img {
+  width: 1170px;
+}
+#main .main > div .two img {
+  width: 575px;
+}
+#main .main > div .three img {
+  width: 376px;
+}
+#main .main > div ul li {
+  float: left;
+  margin: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#main #f1_goods {
+  border-top: none;
+  padding: 40px 0 60px 0;
+}
+
+/*# sourceMappingURL=index.css.map */

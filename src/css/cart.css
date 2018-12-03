@@ -1,0 +1,288 @@
+#cartBox {
+  width: 100%;
+}
+#cartBox .cartBox {
+  width: 950px;
+  margin: 0 auto;
+}
+#cartBox .cartBox .cartTop {
+  height: 77px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 15px;
+}
+#cartBox .cartBox .cartTop h1 a {
+  float: left;
+  text-indent: -9999em;
+  width: 208px;
+  height: 76px;
+  background: url(../img/cart/s_05.png) no-repeat center center;
+}
+#cartBox .cartBox .cartTop .contact {
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 12px;
+  text-align: right;
+}
+#cartBox .cartBox .cartTop .contact p:nth-child(1) {
+  padding-right: 20px;
+  margin-bottom: 7px;
+}
+#cartBox .cartBox .cartTop .contact p:nth-child(1) span {
+  color: #F26521;
+  font-size: 14px;
+  font-weight: 900;
+}
+#cartBox .cartBox .cartTop .contact a {
+  color: #000;
+  margin: 0 3px;
+}
+#cartBox .cartBox .process {
+  margin-bottom: 12px;
+}
+#cartBox .cartBox .process li {
+  float: left;
+  height: 24px;
+  width: 316px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 24px;
+  background: #E2E2E2;
+}
+#cartBox .cartBox .process li i {
+  float: right;
+  width: 24px;
+  height: 32px;
+  margin-top: -4px;
+  background: url(../img/cart/s_shop1.gif) no-repeat;
+}
+#cartBox .cartBox .process .active {
+  color: #fff;
+  background: #82BF38;
+}
+#cartBox .cartBox .process li:nth-child(1) i {
+  background-position: 0 0;
+}
+#cartBox .cartBox .process li:nth-child(2) i {
+  background-position: -27px 0;
+}
+#cartBox .cartBox .cartHead {
+  height: 32px;
+  background: #E3E3E3;
+  font-size: 12px;
+  line-height: 32px;
+  padding-left: 23px;
+  margin-bottom: 28px;
+}
+#cartBox .cartBox .cartHead li {
+  float: left;
+}
+#cartBox .cartBox .cartHead input {
+  background: #fff;
+  margin-right: 5px;
+}
+#cartBox .cartBox .cartHead li:nth-child(2) {
+  margin: 0 220px 0 230px;
+}
+#cartBox .cartBox .cartHead li:nth-child(4) {
+  margin: 0 120px 0 92px;
+}
+#cartBox .cartBox #goodLis {
+  border: 1px solid #D6D3D3;
+  border-bottom: none;
+}
+#cartBox .cartBox #goodLis .item {
+  height: 120px;
+  padding: 23px 0 0 15px;
+  border-bottom: 1px solid #D6D3D3;
+}
+#cartBox .cartBox #goodLis .item ul li {
+  float: left;
+  font-size: 12px;
+  color: #000000;
+  line-height: 22px;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(1) {
+  width: 84px;
+  padding-top: 17px;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(2) {
+  width: 440px;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(2) img {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 80px;
+  margin-right: 20px;
+  border: 1px solid #D6D3D3;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(3) {
+  width: 123px;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(3) p:nth-child(1) {
+  text-decoration: line-through;
+  color: #A6A6A6;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(4) {
+  width: 155px;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(4) span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 11px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(4) input {
+  width: 32px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #D6D3D3;
+  margin: 0 8px;
+  text-align: center;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(5) a {
+  color: #5B5B5B;
+  display: block;
+}
+#cartBox .cartBox #goodLis .item ul li:nth-child(5) a:nth-child(2) {
+  padding-left: 20px;
+}
+#cartBox .cartBox #count {
+  height: 60px;
+  border: 1px solid #D6D3D3;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: #000000;
+  line-height: 58px;
+  padding-left: 15px;
+}
+#cartBox .cartBox #count li {
+  float: left;
+  margin-right: 30px;
+}
+#cartBox .cartBox #count li input {
+  margin-right: 6px;
+}
+#cartBox .cartBox #count li a {
+  padding: 10px;
+  color: #000;
+}
+#cartBox .cartBox #count li .thisActive {
+  color: #fff;
+  background: #EB7416;
+}
+#cartBox .cartBox #count #sum {
+  float: right;
+  width: 114px;
+  height: 48px;
+  text-align: center;
+  background: #EB7416;
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+  border-radius: 3px;
+  line-height: 48px;
+}
+#cartBox .cartBox #allnum > span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #EB7416;
+}
+#cartBox .cartBox #totalprice > span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #EB7416;
+}
+#cartBox .cartBox .fixBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  border-bottom: none;
+}
+#cartBox .cartBox .fixBottom ul {
+  width: 950px;
+  margin: 0 auto;
+}
+#cartBox .cartBox #maybe {
+  border: 1px solid #D6D3D3;
+  margin: 22px 0;
+}
+#cartBox .cartBox #maybe > h2 {
+  height: 30px;
+  background: #F1F1F1;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 30px;
+  padding-left: 15px;
+}
+#cartBox .cartBox #maybe #introduce {
+  padding-left: 15px;
+}
+#cartBox .cartBox #maybe #introduce li {
+  float: left;
+  padding-bottom: 20px;
+  width: 160px;
+  margin-right: 25px;
+}
+#cartBox .cartBox #maybe #introduce li img {
+  width: 160px;
+}
+#cartBox .cartBox #maybe #introduce li .infor {
+  padding-left: 10px;
+  font-size: 12px;
+  color: #5B5B5B;
+  line-height: 20px;
+}
+#cartBox .cartBox #maybe #introduce li .infor span {
+  color: #FF6633;
+  font-weight: 900;
+}
+#cartBox .cartBox #likeGood {
+  height: 30px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 27px;
+}
+#cartBox .cartBox #likeGood > a {
+  float: left;
+  height: 30px;
+  display: inline-block;
+  width: 170px;
+  margin-right: 10px;
+  background: url(../img/cart/s_shop1.gif) no-repeat 0 -290px;
+}
+#cartBox .cartBox #likeGood p {
+  float: left;
+  height: 30px;
+  line-height: 25px;
+}
+#cartBox .cartBox #likeGood p a {
+  color: #FB941B;
+  margin: 0 3px;
+}
+#cartBox .cartBox .copyright {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: #A59999;
+  margin-bottom: 36px;
+}
+#cartBox .cartBox .copyright a {
+  color: #A59999;
+  font-weight: 900;
+}
+#cartBox .cartBox .copyright a:hover {
+  color: #FFA64D;
+}
+
+/*# sourceMappingURL=cart.css.map */

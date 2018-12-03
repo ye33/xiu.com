@@ -1,0 +1,589 @@
+@charset "utf-8";
+// logo区
+#logo {
+    background: #333333;
+    height: 42px;
+    .reg>li {
+        float: left;
+        margin: 6px 8px 0 8px;
+        a {
+            color: #D7D7D7;
+            font-size: 12px;
+            line-height: 34px;
+        }
+    }
+    // 购物袋
+    .reg>li:nth-child(2) {
+        width: 92px;
+        position: relative;
+        //鼠标未划过时的购物袋
+        .mycartOne {
+            width: 100px;
+            position: absolute;
+            height: 34px;
+            padding-left: 21px;
+            background: url(../img/index/logo.png) no-repeat -217px -40px;
+            #logoCartNum {
+                color: #FF7F20;
+            }
+        }
+        // 鼠标划过购物袋时高亮
+        .activeCart {
+            color: #D50214;
+            background: #fff url(../img/index/logo.png) no-repeat -217px -75px;
+            border: 1px solid #E5E5E5;
+            border-bottom: none;
+            height: 35px;
+            margin-bottom: 0px;
+            z-index: 999;
+            #logoCartNum {
+                color: #FF7F20;
+            }
+        }
+        // 鼠标划过购物袋时出现的小购物车
+        #logoCart {
+            display: none;
+            position: absolute;
+            top: 34px;
+            left: 0;
+            z-index: 7;
+            width: 298px;
+            background: #fff;
+            padding: 18px 0 0 10px;
+            border: 1px solid #E5E5E5;
+            // 没有商品时的购物袋
+            .none {
+                font-size: 12px;
+                line-height: 20px;
+                padding: 0 0 18px 7px;
+            }
+            ul {
+                overflow-y: auto;
+                max-height: 300px;
+            }
+            //有商品的购物袋
+            ul li {
+                height: 63px;
+                .smallpic {
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #CDCDCD;
+                    margin-right: 7px;
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+                div {
+                    color: #363636;
+                    font-size: 10px;
+                    line-height: 16px;
+                    .infor {
+                        cursor: pointer;
+                    }
+                    p:nth-child(3) {
+                        color: #EC7414;
+                        line-height: 22px;
+                    }
+                }
+                .del {
+                    font-size: 12px;
+                    color: #464444;
+                    padding-right: 12px;
+                    text-decoration: underline;
+                }
+            }
+            //购物车数量价格区
+            #logoCartBottom {
+                width: 280px;
+                border-top: 1px solid #F0EFF0;
+                position: relative;
+                padding: 6px 0 16px 0;
+                p {
+                    font-size: 12px;
+                    line-height: 32px;
+                    span {
+                        color: #6D4B88;
+                    }
+                }
+                a {
+                    position: absolute;
+                    top: 17px;
+                    right: 30px;
+                    width: 80px;
+                    height: 24px;
+                    background: #D50214;
+                    text-align: center;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // 我的秀
+    .reg>li:nth-child(3) {
+        margin: 6px 0 0 0;
+        width: 76px;
+        position: relative;
+        a {
+            display: block;
+            text-align: center;
+        }
+        // 鼠标划过myXiu时出现的菜单
+        ul {
+            display: none;
+            width: 76px;
+            position: absolute;
+            background: #fff;
+            padding-bottom: 10px;
+            a {
+                font-size: 11px;
+                line-height: 25px;
+                color: #464444;
+                background: none;
+            }
+        }
+    }
+    .reg .myXiu {
+        a {
+            background: url(../img/index/logo.png) no-repeat -163px -108px;
+        }
+    }
+    // 鼠标划过myXiu时高亮
+    .reg .myXiu2 {
+        background: #fff;
+        >a {
+            border: 1px solid #E5E5E5;
+            border-bottom: none;
+            color: #D60214;
+            background: url(../img/index/logo.png) no-repeat -165px -143px;
+        }
+        #logoCart {
+            border: 1px solid #E5E5E5;
+        }
+    }
+    // logo图标
+    h1 a {
+        float: left;
+        width: 212px;
+        height: 32px;
+        text-indent: -9999em;
+        margin-top: 10px;
+        margin-left: 257px;
+        background: url(../img/index/logo.png) no-repeat;
+    }
+    // 右侧搜索框
+    form {
+        margin: 10px 10px 0 0;
+        border: 1px solid #797979;
+        input {
+            height: 30px;
+            background: transparent;
+        }
+        #search {
+            width: 235px;
+            color: #797979;
+            padding-left: 11px;
+        }
+        #searchBtn {
+            width: 28px;
+            background: url(../img/index/logo.png) no-repeat left -40px;
+        }
+    }
+}
+
+// 主导航区
+#mainNav {
+    width: 100%;
+    background-color: #333333;
+    height: 50px;
+    .mainNav ul {
+        width: 468px;
+        margin: 0 auto;
+        li {
+            float: left;
+            padding-top: 18px;
+            margin: 0 15px 1px 0;
+            a {
+                display: block;
+                padding: 0 15px 11px 15px;
+                color: #EAF3F0;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            // 鼠标划过时高亮
+            .active {
+                color: #BCC0CB;
+                border-bottom: 2px solid #717171;
+            }
+        }
+    }
+}
+
+// 次级导航
+#subNav {
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 40px;
+    .subNav>ul {
+        width: 568px;
+        margin: 0 auto;
+        // 一级导航
+        >li {
+            float: left;
+            margin-right: 8px;
+            position: relative;
+            >a {
+                display: block;
+                width: 62px;
+                text-align: center;
+                color: #270008;
+                font-size: 12px;
+                line-height: 40px;
+                height: 40px;
+                cursor: default;
+            }
+            // 鼠标划过时出现的二级导航1号
+            .subNav2 {
+                display: none;
+                width: 747px;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                z-index: 9;
+                padding: 14px 0 12px 16px;
+                border: 1px solid #E5E5E5;
+                background: #fff;
+                .subNavL li {
+                    width: 450px;
+                    padding-bottom: 6px;
+                    border-bottom: 1px dashed #959595;
+                    margin-bottom: 10px;
+                    h2 {
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: #000000;
+                        line-height: 22px;
+                        font-weight: 900;
+                        display: inline-block;
+                    }
+                    p {
+                        font-size: 11px;
+                        line-height: 17px;
+                        font-weight: normal;
+                        a {
+                            color: #000000;
+                        }
+                        .hot {
+                            color: #FF0000;
+                        }
+                        .hot2 {
+                            color: #FF0000;
+                        }
+                    }
+                }
+                .subNavR {
+                    margin-left: 35px;
+                    h2 {
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: #000000;
+                        line-height: 22px;
+                        font-weight: 900;
+                    }
+                    ul a {
+                        color: #000;
+                        font-size: 11px;
+                        line-height: 20px;
+                    }
+                    .hot {
+                        color: #FF0000;
+                    }
+                    .hot2 {
+                        color: #FF0000;
+                    }
+                }
+            }
+            // 鼠标划过时出现的二级导航2号
+            .subNav2_two {
+                display: none;
+                width: 747px;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                z-index: 9;
+                padding: 14px 0 12px 16px;
+                border: 1px solid #E5E5E5;
+                background: #fff;
+                .subNavTop {
+                    padding-bottom: 12px;
+                    border-bottom: 1px dashed #959595;
+                    margin-bottom: 10px;
+                    .subNavTopL {
+                        width: 424px;
+                        h2 {
+                            cursor: pointer;
+                            font-size: 12px;
+                            color: #000000;
+                            line-height: 22px;
+                            font-weight: 900;
+                            display: inline-block;
+                        }
+                        >div {
+                            font-size: 11px;
+                            line-height: 17px;
+                            margin-bottom: 6px;
+                            h3 {
+                                cursor: pointer;
+                                margin-right: 2px;
+                            }
+                            div {
+                                width: 376px;
+                                a {
+                                    color: #000;
+                                }
+                                .hot {
+                                    color: #FF0000;
+                                }
+                                .hot2 {
+                                    color: #FF0000;
+                                }
+                            }
+                        }
+                    }
+                    .subNavTopR {
+                        margin-left: 57px;
+                        h2 {
+                            cursor: pointer;
+                            font-size: 12px;
+                            color: #000000;
+                            line-height: 22px;
+                            font-weight: 900;
+                        }
+                        ul a {
+                            color: #000;
+                            font-size: 11px;
+                            line-height: 20px;
+                        }
+                        .hot {
+                            color: #FF0000;
+                        }
+                        .hot2 {
+                            color: #FF0000;
+                        }
+                    }
+                }
+            }
+            // 鼠标划过subNav时一级导航高亮
+            >.active {
+                background: #fff;
+                border: 1px solid #E5E5E5;
+                border-bottom: none;
+                position: relative;
+                z-index: 10;
+                height: 41px;
+                line-height: 39px;
+            }
+        }
+    }
+}
+
+// banner区
+#banner {
+    div {
+        height: 156px;
+    }
+    div:nth-child(1) {
+        background: url(../img/index/top_01.jpg) no-repeat center top;
+    }
+    div:nth-child(2) {
+        background: url(../img/index/top_02.jpg) no-repeat center top;
+    }
+    div:nth-child(3) {
+        background: url(../img/index/top_03.jpg) no-repeat center top;
+    }
+    div:nth-child(4) {
+        background: url(../img/index/top_04.jpg) no-repeat center top;
+    }
+    div:nth-child(5) {
+        background: url(../img/index/top_05.jpg) no-repeat center top;
+    }
+}
+
+// 尾部
+#service {
+    height: 190px;
+    background: #F2F2F2;
+    border-top: 2px solid #9A9A9A;
+    .service {
+        padding: 30px 0 0 25px;
+        .service1 li {
+            width: 178px;
+            height: 45px;
+            cursor: pointer;
+            background: url(../img/index/footer_sprite.gif) no-repeat left -78px;
+        }
+        .service1 li:nth-child(2) {
+            background: url(../img/index/footer_sprite.gif) no-repeat left -126px;
+        }
+        .service1 li:nth-child(3) {
+            background: url(../img/index/footer_sprite.gif) no-repeat left -177px;
+        }
+        .service2 .customs {
+            position: relative;
+            p {
+                display: none;
+                position: absolute;
+                top: -60px;
+                right: -220px;
+                z-index: 3;
+                font-size: 9px;
+                color: #fff;
+                padding: 8px 10px 0 20px;
+                line-height: 18px;
+                text-align: justify;
+                width: 213px;
+                height: 120px;
+                background: url(../img/index/footer_sprite.gif) no-repeat left -300px;
+            }
+        }
+        .service2 li a {
+            font-size: 12px;
+            color: #4C4C4C;
+            line-height: 26px;
+        }
+        .service3 h3 {
+            width: 256px;
+            height: 12px;
+            text-align: center;
+            border-bottom: 1px solid #808080;
+            margin-bottom: 25px;
+            span {
+                width: 96px;
+                padding: 0 10px;
+                text-align: center;
+                color: #111111;
+                font-size: 16px;
+                background: #F2F2F2;
+            }
+        }
+        .service3 p a {
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            margin-right: 40px;
+            background: url(../img/index/footer_sprite.gif) no-repeat left -226px;
+        }
+        .service3 p .webchat {
+            position: relative;
+            img {
+                display: none;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                left: -126px;
+                top: -13px;
+            }
+        }
+        .service3 p a:nth-child(1):hover {
+            background: url(../img/index/footer_sprite.gif) no-repeat left -263px;
+        }
+        .service3 p a:nth-child(2) {
+            background: url(../img/index/footer_sprite.gif) no-repeat -70px -226px;
+        }
+        .service3 p a:nth-child(2):hover {
+            background: url(../img/index/footer_sprite.gif) no-repeat -70px -263px;
+        }
+        .service3 p a:nth-child(3) {
+            background: url(../img/index/footer_sprite.gif) no-repeat -140px -226px;
+        }
+        .service3 p a:nth-child(3):hover {
+            background: url(../img/index/footer_sprite.gif) no-repeat -140px -263px;
+        }
+        .service3 p a:nth-child(4) {
+            background: url(../img/index/footer_sprite.gif) no-repeat -210px -226px;
+        }
+        .service3 p a:nth-child(4):hover {
+            background: url(../img/index/footer_sprite.gif) no-repeat -210px -263px;
+        }
+        .service3 input {
+            height: 30px;
+            background: url(../img/index/footer_sprite.gif) no-repeat left -436px;
+        }
+        .service3 .subsrible {
+            width: 223px;
+            color: #4C4C4C;
+            padding-left: 10px;
+        }
+        .service3 .subBtn {
+            width: 30px;
+            cursor: pointer;
+            background: url(../img/index/footer_sprite.gif) no-repeat -223px -436px;
+        }
+        .service4 {
+            float: right;
+            width: 85px;
+            height: 110px;
+            text-align: center;
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+            a {
+                display: block;
+                width: 85;
+                height: 86px;
+                margin-top: 10px;
+                background: url(../img/index/footer_sprite.gif) no-repeat -192px -87px;
+            }
+        }
+    }
+}
+
+#about {
+    // height: 207px;
+    background: #FFFFFF;
+    .about {
+        text-align: center;
+        padding-top: 26px;
+        .about1 {
+            margin-bottom: 20px;
+            font-size: 13px;
+            a {
+                color: #000;
+                margin: 0 4px 0 5px;
+            }
+        }
+        .about2 a {
+            display: inline-block;
+            width: 145px;
+            height: 44px;
+            margin-right: 48px;
+            background: url(../img/index/foot_icons.jpg) no-repeat left top;
+        }
+        .about2 a:nth-child(2) {
+            background: url(../img/index/foot_icons.jpg) no-repeat -192px top;
+        }
+        .about2 a:nth-child(3) {
+            background: url(../img/index/foot_icons.jpg) no-repeat -384px top;
+        }
+        .copyright {
+            font-size: 11px;
+            color: #A59999;
+            margin-bottom: 15px;
+            a {
+                color: #A59999;
+                font-weight: 900;
+            }
+            a:hover {
+                color: #FFA64D;
+            }
+        }
+        .quality {
+            margin-bottom: 20px;
+            a {
+                margin-right: 20px;
+            }
+        }
+    }
+}
