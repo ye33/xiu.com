@@ -2,3 +2,4 @@
 change happen in local
 我在远程修改了test
 bae3d85d70c0061d813130fe3f56534093ec455c
+我在本地master拉取远程hot_fix
