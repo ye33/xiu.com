@@ -5,3 +5,4 @@ bae3d85d70c0061d813130fe3f56534093ec455c
 本地hot_fix分支能否拉取远程分支
 我在本地master拉取远程hot_fix
 9c109bd191fcb5df7a65928fa8b9924505df371d
+这是公共分支
